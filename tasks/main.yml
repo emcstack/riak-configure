@@ -1,0 +1,14 @@
+---
+# tasks file riak-configure
+
+- name: Where is Riak
+  shell:  whereis riak | awk '{print $2}'
+  register: whereis_riak
+
+- name: Checks if riak is present
+  stat: path="{{ whereis_riak.stdout }}"
+  register: riak_path
+
+- name: Configure Riak
+  when: riak_path.stat.exists
+  include: configure_riak_el.yml

@@ -1,0 +1,4 @@
+---
+# defaults file riak-configure
+
+apply: false

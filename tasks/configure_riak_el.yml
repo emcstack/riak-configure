@@ -1,0 +1,10 @@
+---
+# Configure Riak
+
+- name: Configure riak.conf
+  template: src=riak.conf.j2 dest=/tmp/riak.conf owner=riak group=riak
+  when: not apply
+
+- name: Configure riak.conf
+  template: src=riak.conf.j2 dest=/etc/riak/riak.conf owner=riak group=riak
+  when: apply

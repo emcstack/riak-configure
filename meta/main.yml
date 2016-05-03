@@ -1,0 +1,32 @@
+galaxy_info:
+  author: John Preston [JMille]
+  description: Riak Configure
+  company:
+  license: GPLv3
+  min_ansible_version: 1.2
+  platforms:
+  - name: EL
+    versions:
+    - 6
+    - 7
+  #- name: Ubuntu
+  #  versions:
+  #  - all
+  #  - lucid
+  #  - maverick
+  #  - natty
+  #  - oneiric
+  #  - precise
+  #  - quantal
+  #  - raring
+  #  - saucy
+  #  - trusty
+  #  - utopic
+  #  - vivid
+  #  - wily
+  #  - xenial
+  galaxy_tags:
+  - riak
+  - s3
+
+dependencies: []
